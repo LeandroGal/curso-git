@@ -1,0 +1,41 @@
+.grid-container {
+    height: 90vh;
+    width: 90vw;
+    border: 1px solid grey;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 
+    "header header header"
+    "nav      main    derecha"
+    "footer footer footer";
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 2fr 8fr 2fr;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+    background-color: blue;
+}
+
+nav {
+    grid-area: nav;
+    background-color: lightcoral;
+}
+
+main {
+    grid-area: main;
+    background-color: lightcyan;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightseagreen;
+}
+
+nav.derecha {
+    grid-area: derecha;
+}
